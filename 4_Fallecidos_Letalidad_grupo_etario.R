@@ -3,16 +3,6 @@
 # ----------------------------------------------------------------
 
 
-
-# Importación de datos SE REALIZA EN SCRIPT 1 Casos_SEPI----------------------------------------------------
-
-
-# UCIRAG_HSM <- import(here("Tableros Salta/BD UC-IRAG/NOMINAL/UC_IRAG_HSM.csv"),
-#                      encoding = "Latin-1" # PARA QUE TOME LOS VALORES EN CASTELLANO DE UN CSV
-# )
-
-
-
 # ----------------------------------------------------------------
 # ORDENAR LA VARIABLE GRUPO ETARIO
 # ----------------------------------------------------------------
