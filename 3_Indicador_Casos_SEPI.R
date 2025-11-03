@@ -1,46 +1,4 @@
 
-# Librerias ---------------------------------------------------------------
-
-
-pacman::p_load(
-  rio,         # para importar datos 
-  here,         # para rutas relativas para localizar arhivos
-  skimr,        # para revisar los datos
-  janitor,      # para limpieza de datos
-  lubridate,    #limpieza
-  ggplot2,      # para visualizaciones
-  tidyverse     # para manejo de datos y visualización
-)
-
-
-
-# Importación de los datos ------------------------------------------------
-
-
-UCIRAG_HSM <- import(here("Tableros Salta/BD UC-IRAG/NOMINAL/UC_IRAG_HSM.csv"))
-
-
-UCIRAG_HSM <- import(here("Tableros Salta/BD UC-IRAG/NOMINAL/UC_IRAG_HSM.csv"),
-  encoding = "Latin-1" # PARA QUE TOME LOS VALORES EN CASTELLANO DE UN CSV
-)
-
-UCIRAG_HSM_AGRUPADA <- import(
-  here("Tableros Salta/BD UC-IRAG/AGRUPADA/UC IRAG - Carga Agrupada-Salta-HOSPITAL SEÑOR DEL MILAGRO.xlsx")
-)
-
-
-
-# Exploración y limpieza --------------------------------------------------
-
-#
-
-names(UCIRAG_HSM)
-
-tabyl(UCIRAG_HSM, CLASIFICACION_MANUAL)
-
-tabyl(UCIRAG_HSM, CLASIFICACION_MANUAL, SEPI_FECHA_MINIMA)
-
-tabyl(UCIRAG_HSM, FECHA_MINIMA)
 
 
 # INDICADOR 1: Casos de IRAG e IRAG extendida por semana epidemiológica ----------------
